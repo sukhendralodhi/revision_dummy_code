@@ -237,11 +237,77 @@
 //     inputEle.value = "";
 // });
 
-
 // setTimeout(() => {
 //     for(let i = 0; i<fruits.length; i++) {
 //         resultEle.innerHTML += `<p>${fruits[i]}</p>`;
 //     }
 // },2000);
 
+// let data1 = ['mohan', 'deepak', 'rajesh', 'saloni'];
+// let data2 = ['janvi', 'sonam', 'rashmi', 'rakshita'];
+// let data3 = ['chetan', 'nihal', 'shivani', 'lokesh'];
 
+// console.log(data.join(' + '));
+// console.log(data1.concat(data2, data3));
+// data1.splice(2,0,'soma','janvi');
+
+// const mergeData = data1.concat(data2, data3);
+
+// // console.log(mergeData.toString());
+// let name1 = 'janki';
+// let name2 = 'sama';
+// let name3 = 'shivani';
+
+// data1.unshift(name1, name2, name3);
+
+// console.log(data1);
+
+// let myData = data2.slice(1,4);
+
+// console.log(data2);
+// console.log(myData);
+
+// let data1 = ["mohan", "deepak", "rajesh", "saloni"];
+// let data2 = ["janvi", "sonam", "rashmi", "rakshita"];
+// let data3 = ["chetan", "nihal", "shivani", "lokesh"];
+
+// const sortData1 = data1.sort();
+// const sortData2 = data2.sort();
+// const sortData3 = data3.sort();
+//
+// console.log(sortData1);
+// console.log(sortData2);
+// console.log(sortData3);
+//
+// console.log(sortData1.reverse());
+// console.log(sortData2.reverse());
+// console.log(sortData3.reverse());
+
+let numbers1 = [4, 2, 6, 9, 7, 8, 3, 1, 11, 15, 46, 78];
+let numbers2 = [55,46,8,78,88,99,22,33,66,100,200,300,500,400];
+
+let sortNumbersAccending = numbers1.sort((a, b) => a - b);
+
+let sortNumbersDeccending = numbers2.sort((a, b) => b - a);
+
+console.log(sortNumbersAccending);
+console.log(sortNumbersDeccending);
+
+const res1Ele = document.querySelector('.res1');
+const res2Ele = document.querySelector('.res2');
+const btn1Ele = document.querySelector('.btn1');
+const btn2Ele = document.querySelector('.btn2');
+
+
+const sortAlphabetically = () => {
+    let sortNumbers1 =  numbers1.sort();
+    res1Ele.innerText = sortNumbers1;
+}
+
+const sortNumerically = () => {
+    let sortNumbers2 = numbers1.sort((a,b) => a-b);
+    res2Ele.innerText = sortNumbers2;
+}
+
+btn1Ele.addEventListener('click', sortAlphabetically);
+btn2Ele.addEventListener('click', sortNumerically);
