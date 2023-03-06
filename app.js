@@ -349,4 +349,39 @@ const largestNumberArr = ()=> {
 document.querySelector('.btn1').addEventListener('click', largestNumberArr);
 */
 
+/*
 
+let numbers = [5,6,99,4,3,55,44,66];
+
+// const minNumber = () => {
+//     document.querySelector('.res1').innerText =  Math.min(...numbers);
+// }
+
+// document.querySelector('.btn1').addEventListener('click', minNumber);
+
+const maxNumber = () => {
+    document.querySelector('.res1').innerText =  Math.max(...numbers);
+}
+
+document.querySelector('.btn1').addEventListener('click', maxNumber);
+
+*/
+
+let numbers = [5,6,99,4,3,55,44,66];
+const resultEle = document.querySelector('.res1'); 
+
+const minNumber = (numbers) => {
+    let lengthArr = arr.length;
+    let min = Infinity;
+
+    while(lengthArr --) {
+        if(numbers[lengthArr] < min) {
+            min = numbers[lengthArr];
+        }
+    }
+    return min;
+}
+
+document.querySelector('.btn1').addEventListener('click', () => {
+    resultEle.innerHTML = minNumber();
+});
