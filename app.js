@@ -283,6 +283,8 @@
 // console.log(sortData2.reverse());
 // console.log(sortData3.reverse());
 
+/*
+
 let numbers1 = [4, 2, 6, 9, 7, 8, 3, 1, 11, 15, 46, 78];
 let numbers2 = [55,46,8,78,88,99,22,33,66,100,200,300,500,400];
 
@@ -311,3 +313,40 @@ const sortNumerically = () => {
 
 btn1Ele.addEventListener('click', sortAlphabetically);
 btn2Ele.addEventListener('click', sortNumerically);
+ */
+
+/*
+const points = [10, 55, 66, 9, 4, 33, 22, 11];
+
+document.querySelector(".res1").innerText = points;
+
+const randomData = () => {
+  points.sort(() => {
+    return 0.5 - Math.random();
+  });
+  document.querySelector(".res1").innerText = points;
+};
+
+document.querySelector(".btn1").addEventListener("click", randomData);
+*/
+
+/*
+const points = [10, 55, 66, 9, 4, 33, 22, 11];
+
+
+// const lowestNumberArr = ()=> {
+//     let lowestNumber = points.sort((a,b) => a-b);
+//     document.querySelector('.res1').innerText = lowestNumber[0];
+// }
+
+// document.querySelector('.btn1').addEventListener('click', lowestNumberArr);
+
+const largestNumberArr = ()=> {
+    let largestNumber = points.sort((a,b) => b-a);
+    document.querySelector('.res1').innerText = largestNumber[0];
+}
+
+document.querySelector('.btn1').addEventListener('click', largestNumberArr);
+*/
+
+
