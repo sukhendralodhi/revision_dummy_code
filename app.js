@@ -399,3 +399,82 @@ document.querySelector('.btn1').addEventListener('click', () => {
 });
 
 */
+
+/*
+
+const cars = [
+    {type: "Volvo", year:2016},
+    {type: "Saab", year: 2001},
+    {type: "Honda", year: 2010}
+];
+
+const displayCars1 = () => {
+    document.querySelector('.res1').innerHTML = 
+    `${cars[0].type} ${cars[0].year} <br>
+    ${cars[1].type} ${cars[1].year} <br>
+    ${cars[2].type} ${cars[2].year} <br>
+    `
+}
+
+displayCars1();
+
+cars.sort((a,b) => a.year - b.year);
+
+// console.log(cars);
+const displayCars2 = () => {
+    document.querySelector('.res2').innerHTML = 
+    `${cars[0].type} ${cars[0].year} <br>
+    ${cars[1].type} ${cars[1].year} <br>
+    ${cars[2].type} ${cars[2].year} <br>
+    `
+}
+
+
+
+document.querySelector('.btn1').addEventListener('click', displayCars2);
+*/
+
+// const cars = [
+//   { type: "Volvo", year: 2016 },
+//   { type: "Saab", year: 2001 },
+//   { type: "Honda", year: 2010 },
+// ];
+
+// const displayCars1 = () => {
+//   document.querySelector(
+//     ".res1"
+//   ).innerHTML = `${cars[0].type} ${cars[0].year} <br>
+//     ${cars[1].type} ${cars[1].year} <br>
+//     ${cars[2].type} ${cars[2].year} <br>
+//     `;
+// };
+
+// displayCars1();
+
+// const mySortFunction = () => {
+//   cars.sort((a, b) => {
+//     let x = a.type.toLowerCase();
+//     let y = b.type.toUpperCase();
+//     if (x < y) {
+//       return -1;
+//     }
+//     if (x > y) {
+//       return 1;
+//     }
+//     return 0;
+//   });
+//   displayCars2();
+// };
+
+// // console.log(cars);
+// const displayCars2 = () => {
+//   document.querySelector(
+//     ".res2"
+//   ).innerHTML = `${cars[0].type} ${cars[0].year} <br>
+//       ${cars[1].type} ${cars[1].year} <br>
+//       ${cars[2].type} ${cars[2].year} <br>
+//       `;
+// };
+// displayCars2();
+
+// document.querySelector(".btn1").addEventListener("click", mySortFunction);
