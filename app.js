@@ -367,21 +367,35 @@ document.querySelector('.btn1').addEventListener('click', maxNumber);
 
 */
 
+/*
+
 let numbers = [5,6,99,4,3,55,44,66];
 const resultEle = document.querySelector('.res1'); 
 
-const minNumber = (numbers) => {
-    let lengthArr = arr.length;
-    let min = Infinity;
+// const minNumber = (arr) => {
+//     let arrLength = numbers.length;
+//     let min = Infinity;
+//     while (arrLength--) {
+//         if(arr[arrLength] < min) {
+//             min = arr[arrLength];
+//         }
+//     }
+//     return min;
+// }
 
-    while(lengthArr --) {
-        if(numbers[lengthArr] < min) {
-            min = numbers[lengthArr];
+const maxNumber = (arr) => {
+    let lengthArr = arr.length;
+    let max = -Infinity;
+    while (lengthArr--) {
+        if(arr[lengthArr] > max) {
+            max = arr[lengthArr];
         }
     }
-    return min;
+    return max;
 }
 
 document.querySelector('.btn1').addEventListener('click', () => {
-    resultEle.innerHTML = minNumber();
+    resultEle.innerHTML = maxNumber(numbers);
 });
+
+*/
