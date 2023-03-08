@@ -578,6 +578,13 @@ let showArg = () => {
 
 /*-------------------SPREAD OPERATOR-------------------*/
 
+// console.log(Math.max(5,6,9,8,2));
+
+let list1 = [5,4,7,8,9,3,2,10,11,55];
+let list2 = [52,44,75,83,93,33,23,103,121,055];
+
+console.log(Math.max(...list1, ...list2,50));
+
 
 
 
