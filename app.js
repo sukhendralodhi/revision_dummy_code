@@ -583,7 +583,25 @@ let showArg = () => {
 let list1 = [5,4,7,8,9,3,2,10,11,55];
 let list2 = [52,44,75,83,93,33,23,103,121,055];
 
-console.log(Math.max(...list1, ...list2,50));
+// console.log(Math.max(...list1, ...list2,50));
+
+/*-----------------GENERATOR FUNCTION----------------*/
+
+function* add(a,b) {
+    console.log(a+b);
+    yield;
+    console.log(a-b);
+    yield;
+    console.log(a*b);
+    yield;
+    return "all task completed";
+}
+
+let sumFun = add(20,10);
+
+function sumFunn() {
+    return sumFun;
+}
 
 
 
