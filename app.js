@@ -478,3 +478,133 @@ document.querySelector('.btn1').addEventListener('click', displayCars2);
 // displayCars2();
 
 // document.querySelector(".btn1").addEventListener("click", mySortFunction);
+
+
+/*-------------------Destructring of array-------------------*/
+
+const fruits = ["Banana", "Orange", "Pineapple", "Guava", "Papaya"];
+// console.log(fruits);
+
+// let [,,, fruit4, fruit5 = "Unknow fruit"] = fruits;
+
+// console.log(fruit1);
+// console.log(fruit2);
+// console.log(fruit3);
+// console.log(fruit4);
+// console.log(fruit5);
+
+
+/*-------------------Rest operator-------------------*/
+
+// let [fruit1,fruit2, ...fruitx] = fruits;
+
+// console.log(fruit1);
+// console.log(fruitx);
+
+
+/* -------------------destructring of object------------------- */
+
+let user = {
+    name: "Sanju",
+    email: "sanju@test.com",
+    phone: 9522543648,
+    address: "Indore"
+};
+
+// console.log(user);
+
+// let {name, email, phone, address, state = "MP"} = user;
+
+// console.log(name);
+// console.log(email);
+// console.log(phone);
+// console.log(address);
+// console.log(state);
+
+/*-------------------rest operator-------------------*/
+
+let {phone, ...email} = user;
+
+// console.log(name);
+// console.log(phone);
+// console.log(email);
+
+/*------------------- REST PARAMETER---------------------*/
+function sum(a,b,...c) {
+    console.log(c);
+    return a+b;
+}
+
+// console.log(sum(2,4,3,5));
+
+function sumAll(...args) {
+    let sum = 0;
+    // return args;
+    for(let arg of args) {
+        sum += arg;
+    }
+    return sum;
+}
+
+// console.log("Sum = ",sumAll(2,4,6,7,1));
+
+function showName(first, last, ...etc) {
+    console.log(first + " " + last);
+    console.log(etc);
+}
+
+// showName('Sanju', 'Rajput', 9522543648, 'Indore');
+
+function names() {
+    console.log(arguments.length);
+    for(let name of arguments) {
+        console.log(name);
+    }
+}
+
+// names('sanju','mohan','deepak','raja');
+function f() {
+
+let showArg = () => {
+    // console.log(arguments);
+    for(let name of arguments) {
+        console.log(name);
+    }
+}
+
+// showArg();
+}
+// f('sanju','mohan','deepak','raja')
+
+/*-------------------SPREAD OPERATOR-------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
